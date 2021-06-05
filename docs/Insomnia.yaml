@@ -1,0 +1,89 @@
+_type: export
+__export_format: 4
+__export_date: 2021-06-05T22:01:22.612Z
+__export_source: insomnia.desktop.app:v2021.3.0
+resources:
+  - _id: req_aa91a135e47e4b4990566e52fc3eeef2
+    parentId: wrk_7a9bc2f9cae1411e88e6268aad55b64b
+    modified: 1622912268978
+    created: 1622912172639
+    url: "{{url}}/pdf"
+    name: upload
+    description: ""
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - name: file
+          value: ""
+          description: ""
+          id: pair_1f8970d48ac44091884692a5c8e829aa
+          type: file
+          multiline: null
+          fileName: ''
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+        id: pair_11a8492a1102460c9f70a6f739d5a0fd
+    authentication: {}
+    metaSortKey: -1622912172639
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_7a9bc2f9cae1411e88e6268aad55b64b
+    parentId: null
+    modified: 1622912085010
+    created: 1622912085010
+    name: backend-pdf-thumb-generator
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: env_996f5777a37d5d7aee643b4103bcf26048c2c555
+    parentId: wrk_7a9bc2f9cae1411e88e6268aad55b64b
+    modified: 1622912106360
+    created: 1622912085143
+    name: Base Environment
+    data:
+      url: http://localhost:3000
+    dataPropertyOrder:
+      "&":
+        - url
+    color: null
+    isPrivate: false
+    metaSortKey: 1622912085143
+    _type: environment
+  - _id: jar_996f5777a37d5d7aee643b4103bcf26048c2c555
+    parentId: wrk_7a9bc2f9cae1411e88e6268aad55b64b
+    modified: 1622912085147
+    created: 1622912085147
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_b124d6f039904f239ceb3c329354ee75
+    parentId: wrk_7a9bc2f9cae1411e88e6268aad55b64b
+    modified: 1622912085013
+    created: 1622912085013
+    fileName: backend-pdf-thumb-generator
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_35bd8ec4045142f785cd667a9e047afd
+    parentId: env_996f5777a37d5d7aee643b4103bcf26048c2c555
+    modified: 1622912155637
+    created: 1622912133025
+    name: backend-pdf-thumb-generator
+    data:
+      url: http://localhost:3000
+    dataPropertyOrder:
+      "&":
+        - url
+    color: null
+    isPrivate: true
+    metaSortKey: 1622912133025
+    _type: environment

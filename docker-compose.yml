@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    restart: always
+    container_name: pdf-thumb-generator
+    build: .
+    working_dir: /usr/app
+    volumes:
+      - ./volumes:/usr/app/volumes
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '8m'
+        max-file: '3'
